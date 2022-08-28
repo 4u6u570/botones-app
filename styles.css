@@ -67,7 +67,7 @@
   }
 
   @keyframes bounce {
-    50% {
+    70% {
       transform: scale(1.4) rotate(0deg) translate(0px, 0px);
       opacity: 0;
     }
