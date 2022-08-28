@@ -13,7 +13,7 @@
     background: #f1f1f1;
   }
   
-  .icon-conatiner {
+  .icon-container {
     position: relative;
     width: 64px;
     height: 64px;
@@ -35,7 +35,7 @@
     position: absolute;
   }
   
-  .icon-conatiner:active svg:last-child {
+  .icon-container:active svg:last-child {
    animation: bounce 300ms linear; /*bounce 0.3s 1 linear;*/
   
   }
@@ -48,7 +48,7 @@
     margin-top: 20px;
   }
 
-  .icon-conatiner:active {
+  .icon-container:active {
     animation: press 0.3s 1 linear;
    box-shadow: 0 15px 24px rgba(109, 109, 109, 0.11),
     0 5px 15px var(--box-shadow-color);
