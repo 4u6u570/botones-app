@@ -29,7 +29,7 @@
     border-radius: 12px;
     user-select: none;
     transition: all 0.3s ease-out;
-    box-shadow: 0 2px 8px rgb(216, 216, 233);
+    box-shadow: 1 2px 2px rgb(216, 216, 233);
   }
   svg {
     width: 24px;
