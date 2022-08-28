@@ -78,8 +78,4 @@
       transform: scale(1.3) rotate(0deg) translate(0px, 0px);
       opacity: 0;
     }
-    to {
-      transform: scale(0.8) rotate(0deg) translate(0px, 0px);
-      opacity: 100;
-    }
   }
