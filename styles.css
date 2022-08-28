@@ -28,23 +28,16 @@
     /* animation: bounce 0.3s 1 forwards; */
   }
   svg {
-    width: 50px;
+    width: 24px;
     height: auto;
   }
   svg:last-child {
     position: absolute;
   }
   
-  
-  
-  .icon-conatiner:active img:last-child {
+  .icon-conatiner:active svg:last-child {
    animation: bounce 300ms linear; /*bounce 0.3s 1 linear;*/
   
-  }
-
-  @keyframes grow {
-    from { transform: scale(1); }
-    to { transform: scale(2); }
   }
 
   .text {
@@ -75,7 +68,8 @@
 
   @keyframes bounce {
     50% {
-      transform: scale(1.3) rotate(0deg) translate(0px, 0px);
+      transform: scale(1.4) rotate(0deg) translate(0px, 0px);
       opacity: 0;
     }
+   
   }
