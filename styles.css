@@ -38,7 +38,7 @@
   
   
   .icon-conatiner:active img:last-child {
-   animation: bounce 400ms linear; /*bounce 0.3s 1 linear;*/
+   animation: bounce 300ms linear; /*bounce 0.3s 1 linear;*/
   
   }
 
