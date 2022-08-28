@@ -13,6 +13,7 @@
     background: #f1f1f1;
   }
   .button01 {
+    --bg-color: rgb(255, 255, 255);
     --box-shadow-color: rgb(216, 216, 233);
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
@@ -24,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 12px;
     user-select: none;
     transition: all 0.3s ease-out;
