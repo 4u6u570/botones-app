@@ -12,7 +12,11 @@
     justify-content: center;
     background: #f1f1f1;
   }
-  
+  .button01 {
+    --box-shadow-color: rgb(216, 216, 233);
+    --animation: bounce 300ms linear;
+    --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
+  }
   .icon-container {
     position: relative;
     width: 64px;
@@ -23,9 +27,7 @@
     background: #fff;
     border-radius: 12px;
     user-select: none;
-    --box-shadow-color: rgb(216, 216, 233);
     transition: all 0.3s ease-out;
-    /* animation: bounce 0.3s 1 forwards; */
   }
   svg {
     width: 24px;
@@ -36,8 +38,7 @@
   }
   
   .icon-container:active svg:last-child {
-   animation: bounce 300ms linear; /*bounce 0.3s 1 linear;*/
-  
+    animation: var(--animation);
   }
 
   .text {
@@ -68,8 +69,7 @@
 
   @keyframes bounce {
     70% {
-      transform: scale(1.4) rotate(0deg) translate(0px, 0px);
+      transform: var(--transform);
       opacity: 0;
     }
-   
   }
