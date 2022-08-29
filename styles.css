@@ -53,7 +53,7 @@
 
   .icon-container:active {
     animation: press 0.3s 1 linear;
-    box-shadow: 0 2px 24px var(--box-shadow-color);
+    box-shadow: 0 2px 16px var(--box-shadow-color);
   }
 
   @keyframes press {
