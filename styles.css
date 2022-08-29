@@ -71,6 +71,7 @@
   }*/
 
   .icon-container:active {
+    user-select: none;
     animation: press 0.3s 1 linear;
     box-shadow: 0 2px 16px var(--box-shadow-color);
   }
