@@ -53,7 +53,7 @@
 
   .icon-container:active {
     animation: press 0.3s 1 linear;
-   box-shadow: 0 15px 24px rgba(109, 109, 109, 0.11),
+   box-shadow: 0 20px 20px rgba(109, 109, 109, 0.11),
     0 5px 15px var(--box-shadow-color);
   }
 
