@@ -1,16 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+
   body {
-    width: 100%;
-    height: 100vh;
+    background: #f0f0f0;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    background: #f1f1f1;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-family: "Santander Micro Text";
+  
   }
   .button01 {
     --bg-color: rgb(255, 255, 255);
@@ -18,38 +15,60 @@
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
+
+  .button02 {
+    --bg-color: rgb(255, 255, 255);
+    --box-shadow-color: rgb(216, 216, 233);
+    --animation: bounce 300ms linear;
+    --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
+  }
+
+  .button03 {
+    --bg-color: rgb(255, 255, 255);
+    --box-shadow-color: rgb(216, 216, 233);
+    --animation: bounce 300ms linear;
+    --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
+  }
+
+  .button04 {
+    --bg-color: rgb(255, 255, 255);
+    --box-shadow-color: rgb(216, 216, 233);
+    --animation: bounce 300ms linear;
+    --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
+  }
+  
   .icon-container {
     position: relative;
+    overflow: hidden;
     width: 64px;
     height: 64px;
     display: flex;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     background: var(--bg-color);
     border-radius: 12px;
     user-select: none;
     transition: all 0.3s ease-out;
-    box-shadow: 1 2px 2px rgb(216, 216, 233);
+   
   }
-  svg {
-    width: 24px;
-    height: auto;
-  }
-  svg:last-child {
-    position: absolute;
-  }
+ 
+ 
   
   .icon-container:active svg:last-child {
     animation: var(--animation);
   }
 
-  .text {
-    color: #666;
-    font-family: SantanderMicroText;
+  /*.icon-container p {
     font-size: 12px;
-    font-weight: regular;
     margin-top: 8px;
-  }
+    text-align: center;
+    color: #4C5656;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }*/
 
   .icon-container:active {
     animation: press 0.3s 1 linear;
