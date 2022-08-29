@@ -53,8 +53,7 @@
 
   .icon-container:active {
     animation: press 0.3s 1 linear;
-   box-shadow: 0 20px 20px rgba(109, 109, 109, 0.11),
-    0 10px 10px var(--box-shadow-color);
+    box-shadow: 0 2px 24px var(--box-shadow-color);
   }
 
   @keyframes press {
