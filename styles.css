@@ -50,6 +50,7 @@
     border-radius: 12px;
     user-select: none;
     transition: all 0.3s ease-out;
+    box-shadow: 0 2px 16px rgb(216, 216, 233);
    
   }
  
@@ -71,7 +72,7 @@
   }*/
 
   .icon-container:active {
-    user-select: none;
+   
     animation: press 0.3s 1 linear;
     box-shadow: 0 2px 16px var(--box-shadow-color);
   }
