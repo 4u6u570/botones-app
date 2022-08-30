@@ -11,28 +11,28 @@
   }
   .button01 {
     --bg-color: rgb(255, 255, 255);
-    --box-shadow-color: rgb(216, 216, 233);
+    --box-shadow-color: rgba(216, 216, 233, 0);
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
 
   .button02 {
     --bg-color: rgb(255, 255, 255);
-    --box-shadow-color: rgb(216, 216, 233);
+    --box-shadow-color: rgba(216, 216, 233, 0);
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
 
   .button03 {
     --bg-color: rgb(255, 255, 255);
-    /*--box-shadow-color: rgba(255, 255, 255, 0);*/
+    --box-shadow-color: rgba(216, 216, 233, 0);
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
 
   .button04 {
     --bg-color: rgb(255, 255, 255);
-    /*--box-shadow-color: rgb(216, 216, 233);*/
+    --box-shadow-color: 0 2px 8px rgba(216, 216, 233, 0);
     --animation: bounce 300ms linear;
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
@@ -50,26 +50,9 @@
     border-radius: 12px;
     user-select: none;
     transition: all 0.3s ease-out;
-    /*box-shadow: 0 2px 8px rgb(216, 216, 233);*/
+    box-shadow: 0 2px 8px rgb(216, 216, 233);
     
   }
-
- /* PRUEBAS CON SOMBRAS DEFAULT*/
-  .icon-container#boton03 {
-    box-shadow: 0 2px 8px rgb(216, 216, 233);
-  }
- .icon-container#boton04 {
-    box-shadow: 0 2px 8px rgb(216, 216, 233);
-  }
-  
-  .icon-container:active#boton03 {
-      box-shadow: 0 2px 8px rgba(216, 216, 233, 0);
-  }
-
-  .icon-container:active#boton04 {
-      box-shadow: 0 2px 8px rgba(216, 216, 233, 0);
-}
-  /* FIN */
 
   .icon-container:active svg:last-child {
     animation: var(--animation);
@@ -93,7 +76,7 @@
 
   }
 
-  
+  /* --- Keyframes press & bounce ---*/
 
   @keyframes press {
     0% {
@@ -102,9 +85,7 @@
     50% {
       transform: scale(0.92);
     }
-    to {
-      transform: scale(1);
-    }
+   
   }
 
   @keyframes bounce {
