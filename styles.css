@@ -37,7 +37,7 @@
     --transform: scale(0.7) rotate(0deg) translate(00px, 0px);
   }
   
-  .icon-container {
+  .icon-box {
     position: relative;
     overflow: hidden;
     width: 64px;
@@ -51,26 +51,14 @@
     user-select: none;
     transition: all 0.3s ease-out;
     box-shadow: 0 2px 8px rgb(216, 216, 233);
-    
   }
 
-  .icon-container:active svg:last-child {
+  .icon-box:active svg:last-child {
     animation: var(--animation);
     user-select: none;
   }
 
-  /*.icon-container p {
-    font-size: 12px;
-    margin-top: 8px;
-    text-align: center;
-    color: #4C5656;
-    margin-top: 100px;
-    position: absolute;
-    z-index: 1000;
-    transition: color 0.3s ease-out;
-  }*/
-
-  .icon-container:active {
+  .icon-box:active {
     animation: press 0.3s 1 linear;
    box-shadow: 0 2px 16px var(--box-shadow-color);
 
@@ -79,13 +67,10 @@
   /* --- Keyframes press & bounce ---*/
 
   @keyframes press {
-    0% {
-      transform: scale(1);
-    }
+   
     50% {
       transform: scale(0.92);
     }
-   
   }
 
   @keyframes bounce {
