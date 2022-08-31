@@ -1,7 +1,7 @@
 
    /* --- Propiedades generales del body ---*/
   body {
-    background: /*#f0f0f0;*/ #1E1F21;
+    background: #f0f0f0; /*#1E1F21*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
