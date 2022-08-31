@@ -1,14 +1,15 @@
 
+   /* --- Propiedades generales del body ---*/
   body {
-    background: #f0f0f0;
+    background: /*#f0f0f0;*/ #1E1F21;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    font-family: "Santander Micro Text";
-  
   }
+
+  /* --- Variables personalizadas para cada botón ---*/
   .button01 {
     --bg-color: rgb(255, 255, 255);
     --box-shadow-color: rgba(216, 216, 233, 0);
@@ -37,6 +38,7 @@
     --transform: scale(0.8) rotate(0deg) translate(00px, 0px);
   }
   
+  /* --- Propiedades por default de todos los botones ---*/
   .icon-box {
     position: relative;
     overflow: hidden;
@@ -53,21 +55,20 @@
     box-shadow: 0 2px 8px rgb(216, 216, 233);
   }
 
+   /* --- Animación del símbolo interno del botón (efecto Bounce) ---*/
   .icon-box:active svg:last-child {
     animation: var(--animation);
     user-select: none;
   }
 
+  /* --- Container del botón presionado ---*/
   .icon-box:active {
     animation: press 0.3s 1 linear;
-   box-shadow: 0 2px 16px var(--box-shadow-color);
-
+    box-shadow: 0 2px 16px var(--box-shadow-color);
   }
 
-  /* --- Keyframes press & bounce ---*/
-
+  /* --- Keyframes de efectos Press & Bounce ---*/
   @keyframes press {
-   
     50% {
       transform: scale(0.92);
     }
