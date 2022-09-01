@@ -52,7 +52,7 @@
     border-radius: 12px;
     user-select: none;
     transition: all 0.1s ease-out;
-    box-shadow: 0 2px 8px rgb(216, 216, 233);
+    box-shadow: 0 2px 16px rgb(216, 216, 233);
   }
 
    /* --- Animación del símbolo interno del botón (efecto Bounce) ---*/
