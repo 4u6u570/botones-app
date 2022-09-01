@@ -1,7 +1,7 @@
 
    /* --- Propiedades generales del body ---*/
   body {
-    background: #f0f0f0; /*#1E1F21*/
+    background: #f0f0f0; /*#1E1F21;*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -13,28 +13,28 @@
   .button01 {
     --bg-color: rgb(255, 255, 255);
     --box-shadow-color: rgba(216, 216, 233, 0);
-    --animation: bounce 300ms linear;
+    /* --animation: bounce 300ms linear; */
     --transform: scale(0.8) rotate(0deg) translate(00px, 0px);
   }
 
   .button02 {
     --bg-color: rgb(255, 255, 255);
     --box-shadow-color: rgba(216, 216, 233, 0);
-    --animation: bounce 300ms linear;
+    /* --animation: bounce 300ms linear; */ 
     --transform: scale(0.8) rotate(0deg) translate(00px, 0px);
   }
 
   .button03 {
     --bg-color: rgb(255, 255, 255);
     --box-shadow-color: rgba(216, 216, 233, 0);
-    --animation: bounce 300ms linear;
+    /* --animation: bounce 300ms linear; */
     --transform: scale(0.8) rotate(0deg) translate(00px, 0px);
   }
 
   .button04 {
     --bg-color: rgb(255, 255, 255);
     --box-shadow-color: 0 2px 8px rgba(216, 216, 233, 0);
-    --animation: bounce 300ms linear;
+     /*--animation: bounce 300ms linear; */
     --transform: scale(0.8) rotate(0deg) translate(00px, 0px);
   }
   
@@ -61,22 +61,21 @@
     user-select: none;
   }
 
-  /* --- Container del botón presionado ---*/
+  /* --- Container del botón en estado pressed (active) ---*/
   .icon-box:active {
-    animation: press 0.3s 1 linear;
+    /*animation: press 0.3s 1 linear;*/
+    transform: scale(0.950);
     box-shadow: 0 2px 16px var(--box-shadow-color);
   }
 
-  /* --- Keyframes de efectos Press & Bounce ---*/
-  @keyframes press {
-    50% {
-      transform: scale(0.92);
-    }
-  }
 
-  @keyframes bounce {
-    50% {
-      transform: var(--transform);
-      opacity: 100;
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 1px rgba($color, 0.3),
+        0 0 0 3px rgba($color, 0.3), 0 0 0 5px rgba($color, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 4px rgba($color, 0.3),
+        0 0 0 20px rgba($color, 0), 0 0 0 30px rgba($color, 0);
     }
   }
