@@ -51,7 +51,7 @@
     background: var(--bg-color);
     border-radius: 12px;
     user-select: none;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
     box-shadow: 0 2px 8px rgb(216, 216, 233);
   }
 
